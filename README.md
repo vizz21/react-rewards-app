@@ -1,12 +1,59 @@
-# React + Vite
+<h1>
+  Customer Rewards Application
+</h1>
+   <h2> Project Overview </h2>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React-based web application that allows users to view customer transactions, filter them by month and year, and calculate reward points based on the purchase amount. 
 
-Currently, two official plugins are available:
+<h2>Features </h2>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Display a list of customers and their transactions.
 
-## Expanding the ESLint configuration
+Filter transactions by Month and Year for better insights.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Calculate and display reward points for each transaction in real-time.
+
+Display total monthly reward points for each customer.
+
+empty transactions with eror msg
+
+
+<h2> Application Details </h2>
+
+The application consists of the following components:
+<ul>
+  <li>App.jsx - Main component handling customer selection, transaction filtering, and rendering.</li>
+  <li>rewardService.js - Contains business logic for calculating reward points.</li>
+  <li>dateConstants.js - Holds static month and year data for easy dropdown population.</li>
+</ul>
+
+<h2>Reward Calculation Logic </h2>
+
+$1 spent between $50 and $100 → 1 Point
+
+$1 spent over $100 → 2 Points
+
+<b>Example:<b>
+
+A $120 purchase: 2x$20 + 1x$50 = 90 points
+
+
+<h2> Screenshot </h2>
+
+<h3>Starting Page with all customers</h3>
+
+![image](https://github.com/user-attachments/assets/901f87b3-a065-4ce6-b0c4-8cea8c04498f)
+
+
+<h3>Individual customer with month and year filter</h3>
+
+![image](https://github.com/user-attachments/assets/4bb73b64-a422-4179-a158-a2155d00e5a1)
+
+
+
+<h3>error msg when no transaction for that particular month</h3>
+
+![image](https://github.com/user-attachments/assets/25c7ec23-4968-4e0b-9ded-540fb4e4466a)
+
+
+
