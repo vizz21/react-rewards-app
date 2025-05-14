@@ -1,0 +1,27 @@
+[
+    {"customerId":"1",
+    "name":"JAck",
+    "transactions":[
+        {"transactionsId":"T1","amount":120,"date":"2025-01-15"},
+        {"transactionsId":"T2","amount":75,"date":"2025-02-12"},
+        {"transactionsId":"T3","amount":200,"date":"2025-03-10"}
+    ]
+
+
+},
+    {"customerId":"2",
+    "name":"Avishkar",
+    "transactions":[
+        {"transactionsId":"T4","amount":150,"date":"2025-01-20"},
+        {"transactionsId":"T5","amount":50,"date":"2025-02-12"}
+        
+    ]
+},
+    {"customerId":"3",
+    "name":"Omkar",
+     "transactions":[
+        {"transactionsId":"T6","amount":90,"date":"2025-03-01"}
+        
+    ]
+}
+]
